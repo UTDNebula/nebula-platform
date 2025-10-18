@@ -1,5 +1,5 @@
-import {withSentryConfig} from "@sentry/nextjs";
-import type { NextConfig } from "next";
+import { withSentryConfig } from '@sentry/nextjs';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -7,16 +7,16 @@ const nextConfig: NextConfig = {
     unoptimized: true,
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "lh3.googleusercontent.com",
-        pathname: "**",
-        port: "",
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+        pathname: '**',
+        port: '',
       },
       {
-        protocol: "https",
-        hostname: "cdn.discordapp.com",
-        pathname: "**",
-        port: "",
+        protocol: 'https',
+        hostname: 'cdn.discordapp.com',
+        pathname: '**',
+        port: '',
       },
     ],
   },
@@ -26,9 +26,9 @@ export default withSentryConfig(nextConfig, {
   // For all available options, see:
   // https://www.npmjs.com/package/@sentry/webpack-plugin#options
 
-  org: "utdnebula",
+  org: 'utdnebula',
 
-  project: "platform",
+  project: 'platform',
 
   // Only print logs for uploading source maps in CI
   silent: !process.env.CI,

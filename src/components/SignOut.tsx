@@ -1,6 +1,6 @@
-"use client";
-import { authClient } from "@/auth-client";
-import { useRouter } from "next/navigation";
+'use client';
+import { authClient } from '@/auth-client';
+import { useRouter } from 'next/navigation';
 
 export const SignOut = () => {
   const router = useRouter();
@@ -11,7 +11,7 @@ export const SignOut = () => {
         authClient.signOut({
           fetchOptions: {
             onSuccess: () => {
-              router.push("/");
+              router.push('/');
             },
           },
         });

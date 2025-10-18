@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { authClient } from "@/auth-client";
+import { authClient } from '@/auth-client';
 
 export const GoogleButton = () => {
   return (
@@ -8,8 +8,8 @@ export const GoogleButton = () => {
       className="btn"
       onClick={() => {
         authClient.signIn.social({
-          provider: "google",
-          callbackURL: "/dashboard",
+          provider: 'google',
+          callbackURL: '/dashboard',
         });
       }}
     >

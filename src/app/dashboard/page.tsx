@@ -1,7 +1,7 @@
-import { auth } from "@/auth";
-import { SignOut } from "@/components/SignOut";
-import { headers } from "next/headers";
-import Image from "next/image";
+import { auth } from '@/auth';
+import { SignOut } from '@/components/SignOut';
+import { headers } from 'next/headers';
+import Image from 'next/image';
 
 export default async function Page() {
   const session = await auth.api.getSession({
@@ -17,12 +17,7 @@ export default async function Page() {
               {session.user.image ? (
                 <div className="avatar">
                   <div className="w-24">
-                    <Image
-                      src={session.user.image}
-                      alt="user profile"
-                      width={96}
-                      height={96}
-                    />
+                    <Image src={session.user.image} alt="user profile" width={96} height={96} />
                   </div>
                 </div>
               ) : (
