@@ -1,1 +1,7 @@
 src/server/db/migrations/*
+.cache
+.next
+.vscode
+package.json
+pnpm-lock.yaml
+public
