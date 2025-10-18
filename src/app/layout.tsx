@@ -14,14 +14,12 @@ const baiJamjuree = Bai_Jamjuree({
 });
 
 export const metadata: Metadata = {
-  title: 'Platform',
-  icons: ['favicon-32x32.png', 'favicon-16x16.png', 'logoIcon.svg'],
+  title: 'Nebula Platform',
   manifest: 'site.webmanifest',
-  description: 'Platform.',
+  description: 'Nebula Platform.',
   openGraph: {
-    title: 'Platform',
-    description: 'Platform.',
-    images: ['https://platform.utdnebula.com/logoIcon.png'],
+    title: 'Nebula Platform',
+    description: 'Nebula Platform.',
     type: 'website',
   },
   twitter: {
